@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z]+)(/([^\?\.]*)?)?(\.[a-zA-Z0-9.-]*)?$ redirect.php?id=$1&pass=$3 [L]
